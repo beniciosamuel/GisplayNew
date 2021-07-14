@@ -1,0 +1,74 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-size: 14px;
+}
+p {
+    text-align: center;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+};
+
+form div {
+    text-align: center;
+}
+
+form .col-auto {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form .btn {
+    margin-top: 20px; 
+    width: 200px;
+}
+
+.contentForm {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -52%);
+    padding: 20px;
+    font-size: 14px;
+    background-color: #f6f8fa;
+    border: 1px solid #586069;
+    border-radius: 6px;
+}
+
+.auth-form-header h1 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -.5px;
+}
+
+.login-callout {
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px solid #f6f8fa;
+    border-radius: 6px;
+}
+
+.alert {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -moz-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+  }
+  .fade.out {
+    opacity: 0;
+  }
+  .fade.in {
+    opacity: 1;
+  }
