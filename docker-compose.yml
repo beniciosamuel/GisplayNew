@@ -1,5 +1,6 @@
-version: "3.1"
+version: "3.2"
 services: 
+
     db:
         image: mongo:4.2
         container_name: db
@@ -8,8 +9,6 @@ services:
             - ${DB_PORT}:27017
         environment: 
             MONGO_INITDB_DATABASE: ${DB_NAME}
-            MONGO_INITDB_ROOT_USERNAME: ${DB_USER}
-            MONGO_INITDB_ROOT_PASSWORD: ${DB_PASS}
 
     api:
         image: node:latest
@@ -20,7 +19,7 @@ services:
         depends_on: 
             - db
         ports: 
-            - ${SERVER_PORT}:$SERVER_PORT
+            - ${SERVER_PORT}:${SERVER_PORT}
         volumes: 
             - .:/usr/src/app
         working_dir: /usr/src/app
